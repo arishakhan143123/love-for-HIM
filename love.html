@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To My Love 💖</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: #ffe6f0;
+      padding: 40px;
+      color: #d63384;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    #message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c2185b;
+    }
+    .heart {
+      font-size: 2em;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hey Love ❤️</h1>
+  <p>I have something special to say to you...</p>
+  <button onclick="showLove()">Click Me!</button>
+  <div id="message">
+    <p class="heart">💖 I LOVE YOU FOREVER 💖</p>
+    <p>You make my world brighter every single day.</p>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
